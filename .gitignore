@@ -1,6 +1,7 @@
 # Dependencias
 node_modules/
 venv/
+venv_new/
 __pycache__/
 *.pyc
 
@@ -49,3 +50,15 @@ dump/
 reportes_generados/
 *.pdf
 *.csv
+
+*.db
+*.sqlite
+dump.rdb
+
+# Ignorar archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de trazas y logs de Oracle
+*.trc
+*.aud

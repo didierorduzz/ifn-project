@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="leafGradientBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00b4ff"/>
+      <stop offset="100%" stop-color="#0055aa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <circle cx="50" cy="50" r="46" fill="#0a1a2a" stroke="#0077cc" stroke-width="4"/>
+
+  <!-- Hoja animada -->
+  <path d="M50 75C35 55 30 35 50 25C70 35 65 55 50 75Z" fill="url(#leafGradientBlue)">
+    <animateTransform attributeName="transform" type="scale"
+      from="0.2" to="1" begin="0s" dur="1s" fill="freeze"/>
+  </path>
+
+  <!-- Texto -->
+  <text x="50" y="58" text-anchor="middle" font-size="28"
+        font-family="Inter, sans-serif" fill="white" font-weight="700">
+    IFN
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.5s" fill="freeze"/>
+  </text>
+</svg>
