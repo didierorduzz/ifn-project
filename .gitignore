@@ -51,6 +51,7 @@ reportes_generados/
 *.pdf
 *.csv
 
+# Archivos de bases de datos
 *.db
 *.sqlite
 dump.rdb
@@ -62,3 +63,11 @@ Thumbs.db
 # Archivos de trazas y logs de Oracle
 *.trc
 *.aud
+
+# Archivos de configuración de NPM y Yarn
+.npm/
+yarn.lock
+
+# Directorios de caché
+.cache/
+.eslintcache

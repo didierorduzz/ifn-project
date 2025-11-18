@@ -106,7 +106,7 @@ const RegistrarArbol = () => {
 
         <form onSubmit={handleSubmit} className="form">
           <label>
-            Código de subparcela asociada
+            Código de subparcela asociada *
             <input
               type="text"
               name="codigoSubparcela"
@@ -120,7 +120,7 @@ const RegistrarArbol = () => {
           </label>
 
           <label>
-            ID del árbol
+            ID del árbol (opcional)
             <input
               type="text"
               name="codigoArbol"
@@ -129,12 +129,11 @@ const RegistrarArbol = () => {
               placeholder="AR-0001"
               pattern="^AR-\d{4}$"
               title="Formato: AR-####"
-              required
             />
           </label>
 
           <label>
-            Número de individuo en subparcela
+            Número de individuo en subparcela *
             <input
               type="number"
               name="numIndividuo"
@@ -147,19 +146,19 @@ const RegistrarArbol = () => {
           </label>
 
           <label>
-            Especie
+            Especie *
             <input
               type="text"
               name="especie"
               value={formData.especie}
               onChange={handleChange}
-              placeholder="Nombre científico o común"
+              placeholder="Nombre común"
               required
             />
           </label>
 
           <label>
-            Diámetro a la altura del pecho (DAP, cm)
+            Diámetro a la altura del pecho (DAP, cm) *
             <input
               type="number"
               name="dap"
@@ -173,7 +172,7 @@ const RegistrarArbol = () => {
           </label>
 
           <label>
-            Altura total (m)
+            Altura total (m) *
             <input
               type="number"
               name="altura"
@@ -200,7 +199,7 @@ const RegistrarArbol = () => {
           </label>
 
           <label>
-            Condición del árbol
+            Condición del árbol *
             <select name="condicion" value={formData.condicion} onChange={handleChange} required>
               <option value="">Selecciona...</option>
               <option value="Vivo">Vivo</option>
@@ -211,7 +210,7 @@ const RegistrarArbol = () => {
           </label>
 
           <label>
-            Estado sanitario
+            Estado sanitario *
             <select name="sanitario" value={formData.sanitario} onChange={handleChange}>
               <option value="">Selecciona...</option>
               <option value="Bueno">Bueno</option>

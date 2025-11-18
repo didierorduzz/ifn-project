@@ -138,7 +138,7 @@ const GestionBrigadistas = () => {
           </h2>
           <form onSubmit={handleSubmit} className="form">
             <label>
-              Nombre completo
+              Nombre completo *
               <input
                 type="text"
                 name="nombre"
@@ -150,7 +150,7 @@ const GestionBrigadistas = () => {
             </label>
 
             <label>
-              Correo electrónico
+              Correo electrónico *
               <input
                 type="email"
                 name="correo"
@@ -174,7 +174,7 @@ const GestionBrigadistas = () => {
             </label>
 
             <label>
-              Ubicación
+              Ubicación *
               <input
                 type="text"
                 name="ubicacion"
@@ -186,7 +186,7 @@ const GestionBrigadistas = () => {
             </label>
 
             <label>
-              Zona asignada
+              Zona asignada *
               <select name="zona" value={formData.zona} onChange={handleChange} required>
                 <option value="">Selecciona una zona…</option>
                 <option value="Zona Norte">Zona Norte</option>

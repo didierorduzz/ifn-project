@@ -2,36 +2,6 @@
 
 Sistema completo de gestión de inventarios forestales con arquitectura de microservicios.
 
-## 🏗️ Arquitectura del Sistema
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     FRONTEND (React)                         │
-│                   Puerto: 3000                               │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-        ┌─────────────────────────────────────────────┐
-        │                                             │
-        ▼                                             ▼
-┌──────────────────┐                    ┌──────────────────────┐
-│  Backend Principal│                    │  Microservicios      │
-│  Node.js + MongoDB│                    │                      │
-│  Puerto: 5000     │                    │  1. Análisis (5001)  │
-│                   │                    │     Python + Oracle  │
-│  - Autenticación  │                    │                      │
-│  - Conglomerados  │                    │  2. Zonas (5002)     │
-│  - Subparcelas    │                    │     Node.js + Oracle │
-│  - Árboles        │                    │                      │
-│  - Muestras       │                    └──────────────────────┘
-│  - Usuarios       │
-└──────────────────┘
-        │
-        ▼
-┌──────────────────┐
-│   MongoDB Atlas  │
-└──────────────────┘
-```
-
 ## 📋 Requisitos Previos
 
 ### Software Necesario:
@@ -208,16 +178,6 @@ npm start
    - Accede a http://localhost:3000/login
    - Usa las credenciales de brigadista
 
-2. **Registrar Conglomerado**
-   - Ve a "Registrar Conglomerado"
-   - Completa el formulario con formato CG-####
-   - Guarda los datos
-
-3. **Registrar Subparcela**
-   - Ve a "Registrar Subparcela"
-   - Asocia con un conglomerado existente
-   - Formato: SP-####
-
 4. **Registrar Árbol**
    - Ve a "Registrar Árbol"
    - Asocia con una subparcela
@@ -248,6 +208,16 @@ npm start
    - Crear zonas en el mapa
    - Editar ubicaciones
    - Ver zonas en Oracle DB
+
+   2. **Registrar Conglomerado**
+   - Ve a "Registrar Conglomerado"
+   - Completa el formulario con formato CG-####
+   - Guarda los datos
+
+3. **Registrar Subparcela**
+   - Ve a "Registrar Subparcela"
+   - Asocia con un conglomerado existente
+   - Formato: SP-####
 
 3. **Revisar Reportes**
    - Ver todas las muestras
@@ -413,64 +383,3 @@ Universidad de Investigacion y Desarrollo - Proyecto Integrador II - 2025-II
 ## 📄 Licencia
 
 Este proyecto es de uso educativo para la Universidad Investigacion y Desarrollo.
-
----
-
-**¿Problemas?** Revisa la sección de Solución de Problemas o contacta al equipo.
-```
-
-### 5.3 Archivo .gitignore
-
-**.gitignore (en la raíz del proyecto):**
-```
-# Dependencias
-node_modules/
-venv/
-__pycache__/
-*.pyc
-
-# Variables de entorno
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-*.log
-
-# Build
-build/
-dist/
-.next/
-out/
-
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# Testing
-coverage/
-
-# Temporal
-*.tmp
-*.temp
-
-# Oracle
-*.ora
-wallet/
-
-# MongoDB
-dump/
-
-# Reportes generados
-reportes_generados/
-*.pdf
-*.csv

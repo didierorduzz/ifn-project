@@ -111,7 +111,7 @@ const RegistrarMuestra = () => {
 
         <form onSubmit={handleSubmit} className="form">
           <label>
-            Código de árbol asociado
+            Código de árbol asociado *
             <input
               type="text"
               name="codigoArbol"
@@ -125,7 +125,7 @@ const RegistrarMuestra = () => {
           </label>
 
           <label>
-            Código de muestra
+            Código de muestra (optional)
             <input
               type="text"
               name="codigo"
@@ -134,12 +134,11 @@ const RegistrarMuestra = () => {
               placeholder="MS-0001"
               pattern="^MS-\d{4}$"
               title="Formato: MS-####"
-              required
             />
           </label>
 
           <label>
-            Fecha de recolección
+            Fecha de recolección *
             <input
               type="date"
               name="fecha"
@@ -151,7 +150,7 @@ const RegistrarMuestra = () => {
           </label>
 
           <label>
-            Tipo de muestra
+            Tipo de muestra *
             <select name="tipo" value={formData.tipo} onChange={handleChange} required>
               <option value="">Selecciona…</option>
               <option value="Hoja">Hoja</option>
@@ -163,7 +162,7 @@ const RegistrarMuestra = () => {
           </label>
 
           <label>
-            Cantidad (gramos o unidades)
+            Cantidad (gramos o unidades) *
             <input
               type="number"
               name="cantidad"
@@ -176,7 +175,7 @@ const RegistrarMuestra = () => {
           </label>
 
           <label>
-            Condición de la muestra
+            Condición de la muestra *
             <select name="condicion" value={formData.condicion} onChange={handleChange} required>
               <option value="">Selecciona…</option>
               <option value="Fresca">Fresca</option>
@@ -186,7 +185,7 @@ const RegistrarMuestra = () => {
           </label>
 
           <label>
-            Imagen de la muestra
+            Imagen de la muestra (opcional)
             <input
               type="file"
               name="imagen"

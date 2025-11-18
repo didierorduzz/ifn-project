@@ -155,8 +155,6 @@ const GestionZonas = () => {
                   required
                 >
                   <option value="">Selecciona...</option>
-                  <option value="Conglomerado">Conglomerado</option>
-                  <option value="Subparcela">Subparcela</option>
                   <option value="Zona de Muestreo">Zona de Muestreo</option>
                   <option value="Reserva">Reserva</option>
                   <option value="Otro">Otro</option>
