@@ -188,12 +188,17 @@ npm start
    - Asocia con un árbol
    - Adjunta foto (opcional)
 
-6. **Ver Reportes**
+6. **Ver asignaciones**
+   - Ve a "Mis asignaciones"
+   - Visualiza las tareas, conglomerados, ubicaciones asignadas.
+   - Exporta a CSV 
+
+7. **Ver Reportes**
    - Ve a "Mis Reportes"
    - Filtra por tipo o estado
    - Exporta a CSV
 
-7. **Ver Zonas**
+8. **Ver Zonas**
    - Ve a "Zonas Asignadas"
    - Visualiza en el mapa
    - Exporta listado
